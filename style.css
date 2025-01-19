@@ -1,27 +1,31 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background: url("./images.jpg") no-repeat  center/cover ;
-    height: 100%;
-    width: 100%;
-    opacity: 2;
+body {
+    background: url("./images.jpg") no-repeat center/cover;
+    min-height: 100vh; 
+    margin: 0; 
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
 }
+
 
 .container {
     text-align: center;
     margin: auto;
     border-radius: 34px;
-    border: none;
-    width: 635px;
+    width: 90%; 
+    max-width: 635px; 
     background: transparent;
     backdrop-filter: blur(7px);
-    margin-top: 170px;
-    box-shadow: 2px 4px 37px 16px rgb(67, 50, 155);
-
+    box-shadow: 2px 4px 37px 16px rgba(67, 50, 155, 0.7);
+    padding: 20px; 
 }
+
 
 .heading {
     margin-top: 30px;
@@ -98,4 +102,29 @@ body{
 
 .registration h4:hover {
     color: chartreuse;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%; 
+        padding: 15px;
+    }
+
+    .username input,
+    .password input {
+        padding: 8px 20px; 
+        font-size: 1rem; 
+    }
+
+    .btn button {
+        padding: 10px 100px; 
+    }
+
+    .checkb {
+        padding-left: 10px; 
+    }
+
+    .checkb h4 {
+        margin-left: 10px;
+    }
 }
