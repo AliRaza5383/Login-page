@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("./images.jpg") no-repeat  center/cover ;
+    height: 100%;
+    width: 100%;
+    opacity: 2;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    border-radius: 34px;
+    border: none;
+    width: 635px;
+    background: transparent;
+    backdrop-filter: blur(7px);
+    margin-top: 170px;
+    box-shadow: 2px 4px 37px 16px rgb(67, 50, 155);
+
+}
+
+.heading {
+    margin-top: 30px;
+    padding-top: 34px;
+}
+
+.registration h4 {
+    margin-bottom: 40px;
+}
+
+.username input,
+.password input {
+    border: none;
+    padding: 8px 50px;
+    border-radius: 30px;
+    margin: 20px 0px 20px 0px;
+    font-size: 1.5rem;
+}
+
+.password input {
+    margin-top: 7px;
+
+}
+
+
+.username input::placeholder {
+    font-size: 1.4rem;
+}
+
+.password input::placeholder {
+    font-size: 1.4rem;
+}
+
+.checkb {
+    display: flex;
+    flex-direction: row;
+    padding-left: 100px;
+}
+
+.checkb h5 {
+    font-size: 1.1rem;
+    padding-left: 15px;
+}
+
+.checkb h5:hover {
+    color: rgb(13, 0, 255);
+}
+
+.checkb h4 {
+    font-size: 1.1rem;
+    margin-left: 185px;
+
+}
+
+.btn button {
+    padding: 12px 172px;
+    border-radius: 30px;
+    margin-top: 12px;
+    border: none;
+}
+
+.registration {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: center;
+    margin: 25px;
+    padding-bottom: 23px;
+}
+
+.registration h4 {
+    margin-left: 8px;
+}
+
+.registration h4:hover {
+    color: chartreuse;
+}
