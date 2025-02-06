@@ -6,30 +6,28 @@
 
 body {
     background: url("./images.jpg") no-repeat center/cover;
-    min-height: 100vh; 
-    margin: 0; 
-    display:flex;
-    justify-content: center; 
-    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
 
 .container {
     text-align: center;
     margin: auto;
     border-radius: 34px;
-    width: 90%; 
-    max-width: 635px; 
+    width: 100%;
+    max-width: 635px;
     background: transparent;
     backdrop-filter: blur(7px);
     box-shadow: 2px 4px 37px 16px rgba(67, 50, 155, 0.7);
-    padding: 20px; 
+    padding: 20px;
 }
 
-
 .heading {
-    margin-top: 30px;
-    padding-top: 34px;
+    margin-top: 0px;
+    padding-top: 26px;
 }
 
 .registration h4 {
@@ -43,18 +41,14 @@ body {
     border-radius: 30px;
     margin: 20px 0px 20px 0px;
     font-size: 1.5rem;
+    width: 100%;  /* Makes the inputs fill the width */
 }
 
 .password input {
     margin-top: 7px;
-
 }
 
-
-.username input::placeholder {
-    font-size: 1.4rem;
-}
-
+.username input::placeholder,
 .password input::placeholder {
     font-size: 1.4rem;
 }
@@ -62,12 +56,16 @@ body {
 .checkb {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
 }
 
 .checkb h5 {
     font-size: 1.1rem;
     padding-left: 15px;
+    cursor: pointer;
 }
 
 .checkb h5:hover {
@@ -76,8 +74,7 @@ body {
 
 .checkb h4 {
     font-size: 1.1rem;
-    margin-left: 185px;
-
+    cursor: pointer;
 }
 
 .btn button {
@@ -85,6 +82,7 @@ body {
     border-radius: 30px;
     margin-top: 12px;
     border: none;
+    width: 100%; /* Make the button responsive */
 }
 
 .registration {
@@ -92,8 +90,8 @@ body {
     flex-direction: row;
     justify-content: center;
     justify-content: center;
-    margin: 25px;
-    padding-bottom: 23px;
+    margin-top: 13px;
+    /* padding-bottom: 23px; */
 }
 
 .registration h4 {
@@ -104,27 +102,86 @@ body {
     color: chartreuse;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     .container {
-        width: 95%; 
+        width: 90%;
         padding: 15px;
     }
 
     .username input,
     .password input {
-        padding: 8px 20px; 
-        font-size: 1rem; 
+        padding: 8px 20px;
+        font-size: 1.2rem;
     }
 
     .btn button {
-        padding: 10px 100px; 
+        padding: 10px 100px;
     }
 
     .checkb {
-        padding-left: 10px; 
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     .checkb h4 {
         margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .username input,
+    .password input {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .btn button {
+        padding: 10px 100px;
+    }
+
+    .checkb {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .checkb h4 {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .heading h2 {
+        font-size: 1.5rem;
+    }
+
+    .username input,
+    .password input {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .btn button {
+        padding: 12px 50px;
+    }
+
+    .checkb {
+        padding-left: 5px;
+        padding-right: 5px;
+        flex-direction: column;
+    }
+
+    .checkb h5,
+    .checkb h4 {
+        margin: 5px 0;
     }
 }
